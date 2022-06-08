@@ -27,7 +27,7 @@ def _processing_user(ti):
 
 default_args={ 'start_date': datetime(2022,2,24)}
 dag = DAG(
-    dag_id='user_processing',
+    dag_id='user_processing-1',
     schedule_interval='@daily',
     default_args=default_args,
         catchup=False,
